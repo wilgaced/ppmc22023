@@ -10,6 +10,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//defines 
+
 //variable global 
 char opcion = '\0'; 
 
@@ -80,7 +82,7 @@ int main(int argc, char const *argv[])
 
 void menu_secundario(void) 
 {
-     printf("Ejemplo de selecion multiple\n");
+    printf("Ejemplo de selecion multiple\n");
     printf("Menu Secundario de lo que sea que estes haciendo\n");
     printf("para menu A presione 1\n");
     printf("para menu B presione 2\n");
@@ -89,20 +91,25 @@ void menu_secundario(void)
     fflush(stdin);
     scanf("%c", &opcion);
 
-     if (opcion == 1)
+     if (opcion == '1')
      {
         printf("Usted eligio el menu A\n");
      }
-     else if (opcion == 2)
+     else if (opcion == '2')
      {
          printf("Usted eligio el menu B\n");
      }
-     else if (opcion == 3)
+     else if (opcion == '3')
      {
         printf("Usted eligio el menu C\n");
      }
-     else if (opcion == 4)
+     else if (opcion == '4')
      {
         printf("Usted eligio el menu D\n");
      }
+     else
+     {
+        printf("Opcion no valida\n");
+     }
+     
 }

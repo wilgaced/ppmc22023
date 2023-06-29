@@ -10,17 +10,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define PI 3.141516326
+#define sumar a+b
+
+#define PI 3.141517
+
+#ifndef PI
+const float PI = 3.14151632;
+#endif
 
 // varible globales...
+char paracaracteres = 'A';
+int numerosnegativos_o_positivos = -589;
+unsigned int solonumerospositivos = 0;
+float datosconpuntos = 35.2548;
+double numerosgrandes = 8.68656449492868468;
 int op1, op2, result;
-const float PI2 = 3.14151632
+
+
 
 // prototio de funcines
 float suma(float a, float b);
 
 int main(int argc, char const *argv[])
 {
+    printf("%lf", PI);
+    printf("%s\n", "puede ser una cadena de caracteres");
     system("cls");
     printf("Calculadora que suma dos numeros.\n");
     printf("Introduzca el primer numero :");
@@ -37,5 +51,5 @@ int main(int argc, char const *argv[])
 /*devuelve la suma a + b de los flotantes*/
 float suma(float a, float b)
 {
-    return a + b;
+    return sumar;
 }
